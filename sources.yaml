@@ -1,18 +1,8 @@
-- filename: pdfs.bib
-  search_type: PDFS
-  source_name: MISQ
-  source_url: /home/gerit/ownCloud/data/journals/MISQ
-  search_parameters: NA
-  last_sync: null
-  comment: NA
-  outlet: journal=MIS Quarterly
-  sub_dir_pattern: volume_number
-- filename: corrections.bib
-  search_type: OTHER
-  source_name: corrections
-  source_url: corrections.bib
-  search_parameters: ''
-  last_sync: null
+- filename: DBLP.bib
+  search_type: FEED
+  source_name: MIS Quarterly
+  source_url: ''
+  search_parameters: 
+    - endpoint: dblp
+      params: SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'
   comment: ''
-  outlet: null
-  sub_dir_pattern: null
