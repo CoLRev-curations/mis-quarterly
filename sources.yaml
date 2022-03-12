@@ -6,3 +6,10 @@
     - endpoint: dblp
       params: SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'
   comment: ''
+- filename: CROSSREF.bib
+  search_type: FEED
+  source_name: MIS Quarterly
+  source_url: ''
+  search_parameters: 
+    - endpoint: crossref
+      params: SCOPE journal_issn='0276-7783'
