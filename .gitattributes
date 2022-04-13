@@ -1,3 +1,4 @@
 *.csv diff=daff-csv
 *.csv merge=daff-csv
 *.pdf binary
+search/corrections.bib -text merge=union
