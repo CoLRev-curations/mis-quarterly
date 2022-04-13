@@ -2,17 +2,18 @@
   search_type: FEED
   source_name: MIS Quarterly
   source_url: ''
-  search_parameters: 
-    - endpoint: dblp
-      params: SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'
+  search_parameters:
+  - endpoint: dblp
+    params: SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'
   comment: ''
 - filename: CROSSREF.bib
   search_type: FEED
   source_name: MIS Quarterly
   source_url: ''
-  search_parameters: 
-    - endpoint: crossref
-      params: SCOPE journal_issn='0276-7783'
+  search_parameters:
+  - endpoint: crossref
+    params: SCOPE journal_issn='0276-7783'
+  comment: null
 - filename: pdfs.bib
   search_type: FEED
   source_name: MISQ
@@ -21,3 +22,9 @@
   - endpoint: pdfs_directory
     params: SCOPE path='pdfs' WITH journal='MIS Quarterly' AND sub_dir_pattern='volume_number'
   comment: NA
+- filename: corrections.bib
+  search_type: OTHER
+  source_name: corrections
+  source_url: corrections.bib
+  search_parameters: ''
+  comment: ''
