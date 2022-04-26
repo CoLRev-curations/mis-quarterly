@@ -22,9 +22,3 @@
   - endpoint: pdfs_directory
     params: SCOPE path='pdfs' WITH journal='MIS Quarterly' AND sub_dir_pattern='volume_number'
   comment: NA
-- filename: corrections.bib
-  search_type: OTHER
-  source_name: corrections
-  source_url: corrections.bib
-  search_parameters: ''
-  comment: ''
