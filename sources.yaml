@@ -14,11 +14,3 @@
   - endpoint: crossref
     params: SCOPE journal_issn='0276-7783'
   comment: null
-- filename: pdfs.bib
-  search_type: FEED
-  source_name: MISQ
-  source_url: pdfs
-  search_parameters:
-  - endpoint: pdfs_directory
-    params: SCOPE path='pdfs' WITH journal='MIS Quarterly' AND sub_dir_pattern='volume_number'
-  comment: NA
