@@ -12,7 +12,29 @@
         ]
     },
     "search": {
-        "sources": []
+        "sources": [
+            {
+                "filename": "DBLP.bib",
+                "search_type": "FEED",
+                "source_identifier": "{{dblp_key}}",
+                "search_parameters": "SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'",
+                "comment": ""
+            },
+            {
+                "filename": "pdfs.bib",
+                "search_type": "FEED",
+                "source_identifier": "{{file}}",
+                "search_parameters": "SCOPE path='pdfs' WITH journal='MIS Quarterly' AND sub_dir_pattern='volume_number'",
+                "comment": ""
+            },
+            {
+                "filename": "CROSSREF.bib",
+                "search_type": "FEED",
+                "source_identifier": "https://api.crossref.org/works/{{doi}}",
+                "search_parameters": "SCOPE journal_issn='0276-7783'",
+                "comment": ""
+            }
+        ]
     },
     "load": {},
     "prep": {
