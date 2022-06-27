@@ -126,12 +126,45 @@
     },
     "prescreen": {
         "plugin": null,
-        "mode": null
+        "mode": null,
+        "scope": [
+            {
+                "LanguageScope": [
+                    "en"
+                ]
+            }
+        ]
     },
     "pdf_get": {
-        "pdf_path_type": "symlink"
+        "pdf_path_type": "symlink",
+        "scripts": [
+            {
+                "endpoint": "unpaywall"
+            },
+            {
+                "endpoint": "local_index"
+            }
+        ]
     },
-    "pdf_prep": {},
+    "pdf_prep": {
+        "scripts": [
+            {
+                "endpoint": "pdf_check_ocr"
+            },
+            {
+                "endpoint": "remove_coverpage"
+            },
+            {
+                "endpoint": "remove_last_page"
+            },
+            {
+                "endpoint": "validate_pdf_metadata"
+            },
+            {
+                "endpoint": "validate_completeness"
+            }
+        ]
+    },
     "screen": {
         "process": {
             "overlapp": null,
