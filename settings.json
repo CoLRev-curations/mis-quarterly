@@ -1,7 +1,7 @@
 {
     "project": {
-        "id_pattern": "THREE_AUTHORS_YEAR",
         "review_type": "curated_masterdata",
+        "id_pattern": "THREE_AUTHORS_YEAR",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
         "curation_url": "https://github.com/geritwagner/mis-quarterly",
@@ -12,43 +12,54 @@
             "dblp_key"
         ]
     },
-    "search": {
-        "sources": [
-            {
-                "filename": "DBLP.bib",
-                "search_type": "FEED",
-                "source_name": "DBLP",
-                "source_identifier": "{{dblp_key}}",
-                "search_parameters": "SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'",
-                "script": {
-                    "endpoint": "bib_pybtex"
-                },
-                "comment": ""
+    "sources": [
+        {
+            "filename": "search/DBLP.bib",
+            "search_type": "DB",
+            "source_name": "DBLP",
+            "source_identifier": "{{dblp_key}}",
+            "search_parameters": "SCOPE venue_key='journals/misq' AND journal_abbreviated='MIS Q.'",
+            "search_script": {
+                "endpoint": "search_dblp"
             },
-            {
-                "filename": "pdfs.bib",
-                "search_type": "FEED",
-                "source_name": "PDFs",
-                "source_identifier": "{{file}}",
-                "search_parameters": "SCOPE path='pdfs' WITH journal='MIS Quarterly' AND sub_dir_pattern='volume_number'",
-                "script": {
-                    "endpoint": "bib_pybtex"
-                },
-                "comment": ""
+            "conversion_script": {
+                "endpoint": "bibtex"
             },
-            {
-                "filename": "CROSSREF.bib",
-                "search_type": "FEED",
-                "source_name": "CROSSREF",
-                "source_identifier": "https://api.crossref.org/works/{{doi}}",
-                "search_parameters": "SCOPE journal_issn='0276-7783'",
-                "script": {
-                    "endpoint": "bib_pybtex"
-                },
-                "comment": ""
-            }
-        ]
-    },
+            "source_prep_scripts": [],
+            "comment": ""
+        },
+        {
+            "filename": "search/pdfs.bib",
+            "search_type": "PDFS",
+            "source_name": "PDFs",
+            "source_identifier": "{{file}}",
+            "search_parameters": "SCOPE path='pdfs' WITH journal='MIS Quarterly' AND sub_dir_pattern='volume_number'",
+            "search_script": {
+                "endpoint": "search_pdfs_dir"
+            },
+            "conversion_script": {
+                "endpoint": "bibtex"
+            },
+            "source_prep_scripts": [],
+            "comment": ""
+        },
+        {
+            "filename": "search/CROSSREF.bib",
+            "search_type": "DB",
+            "source_name": "CROSSREF",
+            "source_identifier": "https://api.crossref.org/works/{{doi}}",
+            "search_parameters": "SCOPE journal_issn='0276-7783'",
+            "search_script": {
+                "endpoint": "search_crossref"
+            },
+            "conversion_script": {
+                "endpoint": "bibtex"
+            },
+            "source_prep_scripts": [],
+            "comment": ""
+        }
+    ],
+    "search": {},
     "load": {},
     "prep": {
         "fields_to_keep": [],
@@ -232,21 +243,26 @@
         ]
     },
     "dedupe": {
-        "merge_threshold": 0.8,
-        "partition_threshold": 0.5,
-        "same_source_merges": "prevent"
+        "same_source_merges": "prevent",
+        "scripts": [
+            {
+                "endpoint": "active_learning_training"
+            },
+            {
+                "endpoint": "active_learning_automated",
+                "merge_threshold": 0.8,
+                "partition_threshold": 0.5
+            }
+        ]
     },
     "prescreen": {
-        "scope": [
+        "explanation": "",
+        "scripts": [
             {
+                "endpoint": "scope_prescreen",
                 "LanguageScope": [
                     "en"
                 ]
-            }
-        ],
-        "scripts": [
-            {
-                "endpoint": "scope_prescreen"
             },
             {
                 "endpoint": "colrev_cli_prescreen"
@@ -261,9 +277,6 @@
             },
             {
                 "endpoint": "local_index"
-            },
-            {
-                "endpoint": "website_screenshot"
             },
             {
                 "endpoint": "website_screenshot"
@@ -300,7 +313,7 @@
         ]
     },
     "screen": {
-        "criteria": [],
+        "criteria": {},
         "scripts": [
             {
                 "endpoint": "colrev_cli_screen"
@@ -308,6 +321,6 @@
         ]
     },
     "data": {
-        "data_format": []
+        "scripts": []
     }
 }
