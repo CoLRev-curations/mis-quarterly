@@ -246,6 +246,9 @@
         "same_source_merges": "prevent",
         "scripts": [
             {
+                "endpoint": "curation_full_outlet_dedupe"
+            },
+            {
                 "endpoint": "active_learning_training"
             },
             {
