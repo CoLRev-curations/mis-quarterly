@@ -1,16 +1,16 @@
 atomic_steps: 24356
 colrev_status:
-  CURATED_records: 1738
+  CURATED_records: 1753
   currently:
     exclusion: {}
     md_duplicates_removed: 2774
     md_imported: 0
     md_needs_manual_preparation: 0
-    md_prepared: 224
-    md_processed: 1622
+    md_prepared: 209
+    md_processed: 1637
     md_retrieved: 0
     non_completed: 1846
-    non_processed: 224
+    non_processed: 209
     pdf_imported: 0
     pdf_needs_manual_preparation: 0
     pdf_needs_manual_retrieval: 0
@@ -26,7 +26,7 @@ colrev_status:
     md_imported: 4736
     md_needs_manual_preparation: 4736
     md_prepared: 4736
-    md_processed: 1738
+    md_processed: 1753
     md_retrieved: 4736
     pdf_imported: 0
     pdf_needs_manual_preparation: 0
@@ -35,10 +35,10 @@ colrev_status:
     pdf_prepared: 0
     rev_excluded: 0
     rev_included: 0
-    rev_prescreen: 1738
+    rev_prescreen: 1753
     rev_prescreen_excluded: 116
     rev_prescreen_included: 0
     rev_screen: 0
     rev_synthesized: 0
-completed_atomic_steps: 11210
+completed_atomic_steps: 11225
 completeness_condition: false
