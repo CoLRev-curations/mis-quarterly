@@ -225,7 +225,7 @@
         ],
         "man_prep_scripts": [
             {
-                "endpoint": "colrev_cli_man_prep"
+                "endpoint": "export_man_prep"
             }
         ]
     },
