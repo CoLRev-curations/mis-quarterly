@@ -233,7 +233,16 @@
         "same_source_merges": "prevent",
         "scripts": [
             {
-                "endpoint": "curation_full_outlet_dedupe"
+                "endpoint": "curation_full_outlet_dedupe",
+                "selected_source": "search/CROSSREF.bib"
+            },
+            {
+                "endpoint": "curation_full_outlet_dedupe",
+                "selected_source": "search/DBLP.bib"
+            },
+            {
+                "endpoint": "curation_full_outlet_dedupe",
+                "selected_source": "search/pdfs.bib"
             },
             {
                 "endpoint": "curation_missing_dedupe"
