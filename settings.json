@@ -259,7 +259,7 @@
                 ]
             },
             {
-                "endpoint": "colrev_cli_prescreen"
+                "endpoint": "conditional_prescreen"
             }
         ]
     },
@@ -268,13 +268,7 @@
         "pdf_required_for_screen_and_synthesis": true,
         "scripts": [
             {
-                "endpoint": "unpaywall"
-            },
-            {
                 "endpoint": "local_index"
-            },
-            {
-                "endpoint": "website_screenshot"
             }
         ],
         "man_pdf_get_scripts": [
