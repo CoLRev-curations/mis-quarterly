@@ -303,6 +303,7 @@
         ]
     },
     "screen": {
+        "explanation": null,
         "criteria": {},
         "scripts": [
             {
