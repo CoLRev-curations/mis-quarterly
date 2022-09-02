@@ -1,7 +1,7 @@
 {
     "project": {
         "review_type": "curated_masterdata",
-        "id_pattern": "THREE_AUTHORS_YEAR",
+        "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
         "curation_url": "https://github.com/geritwagner/mis-quarterly",
