@@ -1,5 +1,20 @@
 {
     "project": {
+        "title": "mis-quarterly",
+        "authors": [
+            {
+                "name": "Gerit Wagner",
+                "initials": "GW",
+                "email": "gerit.wagner@hec.ca",
+                "orcid": null,
+                "contributions": [],
+                "affiliations": null,
+                "funding": [],
+                "identifiers": []
+            }
+        ],
+        "keywords": [],
+        "protocol": null,
         "review_type": "curated_masterdata",
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
@@ -10,7 +25,8 @@
             "doi",
             "url",
             "dblp_key"
-        ]
+        ],
+        "colrev_version": "0.5.0"
     },
     "sources": [
         {
