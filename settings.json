@@ -311,9 +311,6 @@
             },
             {
                 "endpoint": "validate_pdf_metadata"
-            },
-            {
-                "endpoint": "validate_completeness"
             }
         ],
         "man_pdf_prep_scripts": [
