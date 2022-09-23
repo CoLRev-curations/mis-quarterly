@@ -30,7 +30,7 @@
     },
     "sources": [
         {
-            "filename": "search/DBLP.bib",
+            "filename": "data/search/DBLP.bib",
             "search_type": "DB",
             "source_name": "dblp",
             "source_identifier": "{{dblp_key}}",
@@ -46,7 +46,7 @@
             "comment": ""
         },
         {
-            "filename": "search/pdfs.bib",
+            "filename": "data/search/pdfs.bib",
             "search_type": "PDFS",
             "source_name": "pdfs_dir",
             "source_identifier": "{{file}}",
@@ -64,7 +64,7 @@
             "comment": ""
         },
         {
-            "filename": "search/CROSSREF.bib",
+            "filename": "data/search/CROSSREF.bib",
             "search_type": "DB",
             "source_name": "crossref",
             "source_identifier": "https://api.crossref.org/works/{{doi}}",

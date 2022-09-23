@@ -1,9 +1,7 @@
 *.bib.sav
-private_config.ini
 missing_pdf_files.csv
 manual_cleansing_statistics.csv
-data.csv
 venv
 .references_learned_settings
 .corrections
-pdfs
+data/pdfs
