@@ -30,9 +30,9 @@
     },
     "sources": [
         {
+            "endpoint": "colrev_built_in.dblp",
             "filename": "data/search/DBLP.bib",
             "search_type": "DB",
-            "source_name": "dblp",
             "source_identifier": "{{dblp_key}}",
             "search_parameters": {
                 "scope": {
@@ -40,15 +40,15 @@
                     "journal_abbreviated": "MIS Q."
                 }
             },
-            "load_conversion_script": {
-                "endpoint": "bibtex"
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
             },
             "comment": ""
         },
         {
+            "endpoint": "colrev_built_in.pdfs_dir",
             "filename": "data/search/pdfs.bib",
             "search_type": "PDFS",
-            "source_name": "pdfs_dir",
             "source_identifier": "{{file}}",
             "search_parameters": {
                 "scope": {
@@ -58,23 +58,23 @@
                     "path": "pdfs"
                 }
             },
-            "load_conversion_script": {
-                "endpoint": "bibtex"
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
             },
             "comment": ""
         },
         {
+            "endpoint": "colrev_built_in.crossref",
             "filename": "data/search/CROSSREF.bib",
             "search_type": "DB",
-            "source_name": "crossref",
             "source_identifier": "https://api.crossref.org/works/{{doi}}",
             "search_parameters": {
                 "scope": {
                     "journal_issn": "0276-7783"
                 }
             },
-            "load_conversion_script": {
-                "endpoint": "bibtex"
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
             },
             "comment": ""
         }
@@ -89,197 +89,197 @@
             {
                 "name": "exclusion",
                 "similarity": 1.0,
-                "scripts": [
+                "prep_package_endpoints": [
                     {
-                        "endpoint": "prep_exclude_complementary_materials"
+                        "endpoint": "colrev_built_in.prep_exclude_complementary_materials"
                     },
                     {
-                        "endpoint": "exclude_non_latin_alphabets"
+                        "endpoint": "colrev_built_in.exclude_non_latin_alphabets"
                     },
                     {
-                        "endpoint": "exclude_languages"
+                        "endpoint": "colrev_built_in.exclude_languages"
                     }
                 ]
             },
             {
                 "name": "high_confidence",
                 "similarity": 0.99,
-                "scripts": [
+                "prep_package_endpoints": [
                     {
-                        "endpoint": "remove_urls_with_500_errors"
+                        "endpoint": "colrev_built_in.remove_urls_with_500_errors"
                     },
                     {
-                        "endpoint": "remove_broken_IDs"
+                        "endpoint": "colrev_built_in.remove_broken_IDs"
                     },
                     {
-                        "endpoint": "global_ids_consistency_check"
+                        "endpoint": "colrev_built_in.global_ids_consistency_check"
                     },
                     {
-                        "endpoint": "prep_curated"
+                        "endpoint": "colrev_built_in.prep_curated"
                     },
                     {
-                        "endpoint": "format"
+                        "endpoint": "colrev_built_in.format"
                     },
                     {
-                        "endpoint": "resolve_crossrefs"
+                        "endpoint": "colrev_built_in.resolve_crossrefs"
                     },
                     {
-                        "endpoint": "get_doi_from_urls"
+                        "endpoint": "colrev_built_in.get_doi_from_urls"
                     },
                     {
-                        "endpoint": "get_masterdata_from_doi"
+                        "endpoint": "colrev_built_in.get_masterdata_from_doi"
                     },
                     {
-                        "endpoint": "get_masterdata_from_crossref"
+                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
                     },
                     {
-                        "endpoint": "get_masterdata_from_dblp"
+                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
                     },
                     {
-                        "endpoint": "get_masterdata_from_open_library"
+                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
                     },
                     {
-                        "endpoint": "get_year_from_vol_iss_jour_crossref"
+                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour_crossref"
                     },
                     {
-                        "endpoint": "get_record_from_local_index"
+                        "endpoint": "colrev_built_in.get_record_from_local_index"
                     },
                     {
-                        "endpoint": "remove_nicknames"
+                        "endpoint": "colrev_built_in.remove_nicknames"
                     },
                     {
-                        "endpoint": "format_minor"
+                        "endpoint": "colrev_built_in.format_minor"
                     },
                     {
-                        "endpoint": "drop_fields"
+                        "endpoint": "colrev_built_in.drop_fields"
                     }
                 ]
             },
             {
                 "name": "medium_confidence",
                 "similarity": 0.9,
-                "scripts": [
+                "prep_package_endpoints": [
                     {
-                        "endpoint": "prep_curated"
+                        "endpoint": "colrev_built_in.prep_curated"
                     },
                     {
-                        "endpoint": "get_doi_from_urls"
+                        "endpoint": "colrev_built_in.get_doi_from_urls"
                     },
                     {
-                        "endpoint": "get_masterdata_from_doi"
+                        "endpoint": "colrev_built_in.get_masterdata_from_doi"
                     },
                     {
-                        "endpoint": "get_masterdata_from_crossref"
+                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
                     },
                     {
-                        "endpoint": "get_masterdata_from_dblp"
+                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
                     },
                     {
-                        "endpoint": "get_masterdata_from_open_library"
+                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
                     },
                     {
-                        "endpoint": "get_year_from_vol_iss_jour_crossref"
+                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour_crossref"
                     },
                     {
-                        "endpoint": "get_record_from_local_index"
+                        "endpoint": "colrev_built_in.get_record_from_local_index"
                     },
                     {
-                        "endpoint": "remove_nicknames"
+                        "endpoint": "colrev_built_in.remove_nicknames"
                     },
                     {
-                        "endpoint": "remove_redundant_fields"
+                        "endpoint": "colrev_built_in.remove_redundant_fields"
                     },
                     {
-                        "endpoint": "format_minor"
+                        "endpoint": "colrev_built_in.format_minor"
                     },
                     {
-                        "endpoint": "drop_fields"
+                        "endpoint": "colrev_built_in.drop_fields"
                     }
                 ]
             },
             {
                 "name": "low_confidence",
                 "similarity": 0.8,
-                "scripts": [
+                "prep_package_endpoints": [
                     {
-                        "endpoint": "prep_curated"
+                        "endpoint": "colrev_built_in.prep_curated"
                     },
                     {
-                        "endpoint": "correct_recordtype"
+                        "endpoint": "colrev_built_in.correct_recordtype"
                     },
                     {
-                        "endpoint": "get_doi_from_urls"
+                        "endpoint": "colrev_built_in.get_doi_from_urls"
                     },
                     {
-                        "endpoint": "get_masterdata_from_doi"
+                        "endpoint": "colrev_built_in.get_masterdata_from_doi"
                     },
                     {
-                        "endpoint": "get_masterdata_from_crossref"
+                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
                     },
                     {
-                        "endpoint": "get_masterdata_from_dblp"
+                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
                     },
                     {
-                        "endpoint": "get_masterdata_from_open_library"
+                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
                     },
                     {
-                        "endpoint": "get_year_from_vol_iss_jour_crossref"
+                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour_crossref"
                     },
                     {
-                        "endpoint": "get_record_from_local_index"
+                        "endpoint": "colrev_built_in.get_record_from_local_index"
                     },
                     {
-                        "endpoint": "remove_nicknames"
+                        "endpoint": "colrev_built_in.remove_nicknames"
                     },
                     {
-                        "endpoint": "remove_redundant_fields"
+                        "endpoint": "colrev_built_in.remove_redundant_fields"
                     },
                     {
-                        "endpoint": "format_minor"
+                        "endpoint": "colrev_built_in.format_minor"
                     },
                     {
-                        "endpoint": "drop_fields"
+                        "endpoint": "colrev_built_in.drop_fields"
                     }
                 ]
             }
         ],
-        "man_prep_scripts": [
+        "prep_man_package_endpoints": [
             {
-                "endpoint": "export_man_prep"
+                "endpoint": "colrev_built_in.export_man_prep"
             }
         ]
     },
     "dedupe": {
         "same_source_merges": "prevent",
-        "scripts": [
+        "dedupe_package_endpoints": [
             {
-                "endpoint": "curation_full_outlet_dedupe",
+                "endpoint": "colrev_built_in.curation_full_outlet_dedupe",
                 "selected_source": "search/CROSSREF.bib"
             },
             {
-                "endpoint": "curation_full_outlet_dedupe",
+                "endpoint": "colrev_built_in.curation_full_outlet_dedupe",
                 "selected_source": "search/DBLP.bib"
             },
             {
-                "endpoint": "curation_full_outlet_dedupe",
+                "endpoint": "colrev_built_in.curation_full_outlet_dedupe",
                 "selected_source": "search/pdfs.bib"
             },
             {
-                "endpoint": "curation_missing_dedupe"
+                "endpoint": "colrev_built_in.curation_missing_dedupe"
             }
         ]
     },
     "prescreen": {
         "explanation": "",
-        "scripts": [
+        "prescreen_package_endpoints": [
             {
-                "endpoint": "scope_prescreen",
+                "endpoint": "colrev_built_in.scope_prescreen",
                 "LanguageScope": [
                     "en"
                 ]
             },
             {
-                "endpoint": "conditional_prescreen"
+                "endpoint": "colrev_built_in.conditional_prescreen"
             }
         ]
     },
@@ -287,48 +287,48 @@
         "pdf_path_type": "symlink",
         "pdf_required_for_screen_and_synthesis": true,
         "rename_pdfs": true,
-        "scripts": [
+        "pdf_get_package_endpoints": [
             {
-                "endpoint": "local_index"
+                "endpoint": "colrev_built_in.local_index"
             }
         ],
-        "man_pdf_get_scripts": [
+        "pdf_get_man_package_endpoints": [
             {
-                "endpoint": "colrev_cli_pdf_get_man"
+                "endpoint": "colrev_built_in.colrev_cli_pdf_get_man"
             }
         ]
     },
     "pdf_prep": {
-        "scripts": [
+        "pdf_prep_package_endpoints": [
             {
-                "endpoint": "pdf_check_ocr"
+                "endpoint": "colrev_built_in.pdf_check_ocr"
             },
             {
-                "endpoint": "remove_coverpage"
+                "endpoint": "colrev_built_in.remove_coverpage"
             },
             {
-                "endpoint": "remove_last_page"
+                "endpoint": "colrev_built_in.remove_last_page"
             },
             {
-                "endpoint": "validate_pdf_metadata"
+                "endpoint": "colrev_built_in.validate_pdf_metadata"
             }
         ],
-        "man_pdf_prep_scripts": [
+        "pdf_prep_man_package_endpoints": [
             {
-                "endpoint": "colrev_cli_pdf_prep_man"
+                "endpoint": "colrev_built_in.colrev_cli_pdf_prep_man"
             }
         ]
     },
     "screen": {
         "explanation": null,
         "criteria": {},
-        "scripts": [
+        "screen_package_endpoints": [
             {
-                "endpoint": "colrev_cli_screen"
+                "endpoint": "colrev_built_in.colrev_cli_screen"
             }
         ]
     },
     "data": {
-        "scripts": []
+        "data_package_endpoints": []
     }
 }
