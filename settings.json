@@ -55,7 +55,7 @@
                     "subdir_pattern": "volume_number",
                     "type": "journal",
                     "journal": "MIS Quarterly",
-                    "path": "pdfs"
+                    "path": "data/pdfs"
                 }
             },
             "load_conversion_package_endpoint": {
