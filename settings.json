@@ -108,34 +108,10 @@
                         "endpoint": "colrev_built_in.global_ids_consistency_check"
                     },
                     {
-                        "endpoint": "colrev_built_in.prep_curated"
-                    },
-                    {
                         "endpoint": "colrev_built_in.format"
                     },
                     {
                         "endpoint": "colrev_built_in.resolve_crossrefs"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_doi_from_urls"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_doi"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_record_from_local_index"
                     },
                     {
                         "endpoint": "colrev_built_in.remove_nicknames"
@@ -152,30 +128,6 @@
                 "name": "medium_confidence",
                 "similarity": 0.9,
                 "prep_package_endpoints": [
-                    {
-                        "endpoint": "colrev_built_in.prep_curated"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_doi_from_urls"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_doi"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_record_from_local_index"
-                    },
                     {
                         "endpoint": "colrev_built_in.remove_nicknames"
                     },
@@ -195,31 +147,7 @@
                 "similarity": 0.8,
                 "prep_package_endpoints": [
                     {
-                        "endpoint": "colrev_built_in.prep_curated"
-                    },
-                    {
                         "endpoint": "colrev_built_in.correct_recordtype"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_doi_from_urls"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_doi"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_record_from_local_index"
                     },
                     {
                         "endpoint": "colrev_built_in.remove_nicknames"
