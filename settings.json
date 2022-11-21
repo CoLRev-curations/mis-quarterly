@@ -81,7 +81,7 @@
         "prep_rounds": [
             {
                 "name": "exclusion",
-                "similarity": 1.0,
+                "similarity": 1,
                 "prep_package_endpoints": [
                     {
                         "endpoint": "colrev_built_in.prep_exclude_complementary_materials"
