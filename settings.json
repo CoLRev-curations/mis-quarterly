@@ -223,6 +223,9 @@
             },
             {
                 "endpoint": "colrev_built_in.validate_pdf_metadata"
+            },
+            {
+                "endpoint": "colrev_built_in.create_tei"
             }
         ],
         "pdf_prep_man_package_endpoints": [

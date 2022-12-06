@@ -4,12 +4,12 @@ This curated repository is based on the [ColRev](https://github.com/geritwagner/
 
 - It provides curated metadata and PDF hashes.
 - Additional metadata should be curated in derivative repositories
-- Corrections are welcome and should be provided using a pull-request (e.g. using the `colrev environment --apply_corrections` convenience function)
+- Corrections are welcome and should be provided using a pull-request (e.g. using the `colrev push -r` convenience function)
 
 To install run
 
 ```
-colrev environment --install geritwagner/mis-quarterly
+colrev env --install geritwagner/mis-quarterly
 ```
 
 ## Statistics
@@ -18,6 +18,11 @@ colrev environment --install geritwagner/mis-quarterly
 
 |TOC           |CROSSREF.bib    |pdfs.bib        |DBLP.bib        |all_merged      |
 |--------------|----------------|----------------|----------------|----------------|
+|UNKNOWN-23-3  |               -|             *1*|               -|              NO|
+|UNKNOWN-21-2  |               -|             *1*|               -|              NO|
+|UNKNOWN-20-3  |               -|             *1*|               -|              NO|
+|UNKNOWN-1-3   |               -|             *1*|               -|              NO|
+|UNKNOWN-1-1   |               -|             *1*|               -|              NO|
 |2022-46-3     |               -|            *21*|               -|              NO|
 |2022-46-2     |              20|              21|               -|              NO|
 |2022-46-1     |              20|              21|               -|              NO|
