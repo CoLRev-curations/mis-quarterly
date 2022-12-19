@@ -144,9 +144,6 @@
                 "similarity": 0.8,
                 "prep_package_endpoints": [
                     {
-                        "endpoint": "colrev_built_in.correct_recordtype"
-                    },
-                    {
                         "endpoint": "colrev_built_in.remove_nicknames"
                     },
                     {
