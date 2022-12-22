@@ -77,83 +77,41 @@
         "fields_to_keep": [],
         "prep_rounds": [
             {
-                "name": "exclusion",
-                "similarity": 1,
+                "name": "prep",
+                "similarity": 0.8,
                 "prep_package_endpoints": [
                     {
-                        "endpoint": "colrev_built_in.exclude_complementary_materials"
+                        "endpoint": "colrev_built_in.resolve_crossrefs"
+                    },
+                    {
+                        "endpoint": "colrev_built_in.source_specific_prep"
                     },
                     {
                         "endpoint": "colrev_built_in.exclude_non_latin_alphabets"
                     },
                     {
+                        "endpoint": "colrev_built_in.exclude_collections"
+                    },
+                    {
+                        "endpoint": "colrev_built_in.exclude_complementary_materials"
+                    },
+                    {
                         "endpoint": "colrev_built_in.exclude_languages"
-                    }
-                ]
-            },
-            {
-                "name": "high_confidence",
-                "similarity": 0.99,
-                "prep_package_endpoints": [
+                    },
                     {
                         "endpoint": "colrev_built_in.remove_urls_with_500_errors"
                     },
                     {
-                        "endpoint": "colrev_built_in.remove_broken_IDs"
+                        "endpoint": "colrev_built_in.remove_broken_ids"
                     },
                     {
                         "endpoint": "colrev_built_in.global_ids_consistency_check"
                     },
                     {
-                        "endpoint": "colrev_built_in.format"
+                        "endpoint": "colrev_built_in.get_doi_from_urls"
                     },
                     {
-                        "endpoint": "colrev_built_in.resolve_crossrefs"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.remove_nicknames"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.format_minor"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.drop_fields"
-                    }
-                ]
-            },
-            {
-                "name": "medium_confidence",
-                "similarity": 0.9,
-                "prep_package_endpoints": [
-                    {
-                        "endpoint": "colrev_built_in.remove_nicknames"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.remove_redundant_fields"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.format_minor"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.drop_fields"
-                    }
-                ]
-            },
-            {
-                "name": "low_confidence",
-                "similarity": 0.8,
-                "prep_package_endpoints": [
-                    {
-                        "endpoint": "colrev_built_in.remove_nicknames"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.remove_redundant_fields"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.format_minor"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.drop_fields"
+                        "endpoint": "colrev_built_in.get_year_from_vol_iss_jour"
                     }
                 ]
             }
