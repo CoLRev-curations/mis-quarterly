@@ -23,8 +23,7 @@ jobs:
           git config --global url.https://github.com/.insteadOf git://github.com/
           git branch colrev-update
           git checkout colrev-update
-          colrev search -s data/search/md_curated.bib
-          colrev search -s data/search/md_crossref.bib
+          colrev search
           colrev prep --polish
           git push --set-upstream origin colrev-update
       - name: pull-request
