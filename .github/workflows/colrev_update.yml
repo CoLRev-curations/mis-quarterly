@@ -24,7 +24,13 @@ jobs:
           git branch colrev-update
           git checkout colrev-update
           colrev search
+          colrev load
+          colrev prep
           colrev prep --polish
+          colrev dedupe
+          colrev prescreen
+          colrev pdfs
+          colrev screen
           git push --set-upstream origin colrev-update
       - name: pull-request
         uses: repo-sync/pull-request@v2
