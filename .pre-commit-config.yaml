@@ -1,5 +1,8 @@
 default_language_version:
     python: python3
+ci:
+    skip: [colrev-hooks-format, colrev-hooks-check]
+
 repos:
 -   repo: local
     hooks:
