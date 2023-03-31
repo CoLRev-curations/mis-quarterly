@@ -18,6 +18,7 @@ colrev env --install geritwagner/mis-quarterly
 
 |TOC           |CROSSREF.bib    |pdfs.bib        |DBLP.bib        |all_merged      |
 |--------------|----------------|----------------|----------------|----------------|
+|UNKNOWN-47-1  |               -|            *17*|               -|              NO|
 |UNKNOWN-46-4  |               -|            *21*|               -|              NO|
 |2022-46-3     |               -|            *21*|               -|              NO|
 |2022-46-2     |              20|              21|              20|              NO|
