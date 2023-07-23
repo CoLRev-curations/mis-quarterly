@@ -19,7 +19,7 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": false,
-        "colrev_version": "0.9.0",
+        "colrev_version": "0.9.1",
         "auto_upgrade": true
     },
     "sources": [
@@ -32,9 +32,6 @@
                     "venue_key": "journals/misq",
                     "journal_abbreviated": "MIS Q."
                 }
-            },
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
             },
             "comment": ""
         },
@@ -50,9 +47,6 @@
                     "path": "data/pdfs"
                 }
             },
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
-            },
             "comment": ""
         },
         {
@@ -63,9 +57,6 @@
                 "scope": {
                     "journal_issn": "0276-7783"
                 }
-            },
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
             },
             "comment": ""
         }
