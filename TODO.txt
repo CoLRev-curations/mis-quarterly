@@ -1,0 +1,15 @@
+
+-> create a validation excel (with one or several sheets?)
+-> extract only records that were not found in all search sources
+-> split colrev_origin according to origin/source columns
+BETTER:source-set vs. processed/curated set
+-> analyses of completeness: optional add-on
+
+DBLP 1977-1979 seems to be incomplete
+
+latest crossref are not yet retrieved?
+
+missing in DBLP:
+https://www.jstor.org/stable/43825930
+https://dl.acm.org/doi/10.5555/3370064.3370065
+https://aisel.aisnet.org/misq/vol39/iss2/2/
