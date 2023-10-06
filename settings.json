@@ -19,14 +19,14 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": false,
-        "colrev_version": "0.9.3",
+        "colrev_version": "0.10.1",
         "auto_upgrade": true
     },
     "sources": [
         {
             "endpoint": "colrev.dblp",
             "filename": "data/search/DBLP.bib",
-            "search_type": "DB",
+            "search_type": "TOC",
             "search_parameters": {
                 "scope": {
                     "venue_key": "journals/misq",
@@ -36,9 +36,9 @@
             "comment": ""
         },
         {
-            "endpoint": "colrev.pdfs_dir",
+            "endpoint": "colrev.files_dir",
             "filename": "data/search/pdfs.bib",
-            "search_type": "PDFS",
+            "search_type": "FILES",
             "search_parameters": {
                 "scope": {
                     "subdir_pattern": "volume_number",
@@ -52,7 +52,7 @@
         {
             "endpoint": "colrev.crossref",
             "filename": "data/search/CROSSREF.bib",
-            "search_type": "DB",
+            "search_type": "TOC",
             "search_parameters": {
                 "scope": {
                     "issn": [
