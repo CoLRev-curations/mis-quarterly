@@ -11,9 +11,9 @@ currently:
   md_retrieved: 0
   non_completed: 114
   non_processed: 54
-  pdf_imported: 0
+  pdf_imported: 1
   pdf_needs_manual_preparation: 0
-  pdf_needs_manual_retrieval: 1
+  pdf_needs_manual_retrieval: 0
   pdf_needs_retrieval: 0
   pdf_not_available: 0
   pdf_prepared: 59
@@ -29,7 +29,7 @@ overall:
   md_prepared: 1920
   md_processed: 1899
   md_retrieved: 5092
-  pdf_imported: 1782
+  pdf_imported: 1783
   pdf_needs_manual_preparation: 1782
   pdf_needs_manual_retrieval: 1783
   pdf_not_available: 0
