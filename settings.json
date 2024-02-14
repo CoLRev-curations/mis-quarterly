@@ -78,6 +78,9 @@
                         "endpoint": "colrev.colrev_curation"
                     },
                     {
+                        "endpoint": "colrev.colrev_curation"
+                    },
+                    {
                         "endpoint": "colrev.source_specific_prep"
                     },
                     {
@@ -167,13 +170,16 @@
                 "endpoint": "colrev.grobid_tei"
             },
             {
+                "endpoint": "colrev.ocrmypdf"
+            },
+            {
+                "endpoint": "colrev.grobid_tei"
+            },
+            {
                 "endpoint": "colrev.remove_coverpage"
             },
             {
                 "endpoint": "colrev.remove_last_page"
-            },
-            {
-                "endpoint": "colrev.create_tei"
             }
         ],
         "pdf_prep_man_package_endpoints": [
