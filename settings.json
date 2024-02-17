@@ -19,7 +19,7 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": false,
-        "colrev_version": "0.10.4",
+        "colrev_version": "0.11.0",
         "auto_upgrade": true
     },
     "sources": [
@@ -81,6 +81,9 @@
                         "endpoint": "colrev.colrev_curation"
                     },
                     {
+                        "endpoint": "colrev.colrev_curation"
+                    },
+                    {
                         "endpoint": "colrev.source_specific_prep"
                     },
                     {
@@ -121,7 +124,6 @@
         ]
     },
     "dedupe": {
-        "same_source_merges": "prevent",
         "dedupe_package_endpoints": [
             {
                 "endpoint": "colrev.curation_full_outlet_dedupe",
@@ -163,6 +165,12 @@
     "pdf_prep": {
         "keep_backup_of_pdfs": true,
         "pdf_prep_package_endpoints": [
+            {
+                "endpoint": "colrev.ocrmypdf"
+            },
+            {
+                "endpoint": "colrev.grobid_tei"
+            },
             {
                 "endpoint": "colrev.ocrmypdf"
             },
