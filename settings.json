@@ -66,13 +66,11 @@
     "search": {
         "retrieve_forthcoming": false
     },
-    "load": {},
     "prep": {
         "fields_to_keep": [],
         "prep_rounds": [
             {
                 "name": "prep",
-                "similarity": 0.8,
                 "prep_package_endpoints": [
                     {
                         "endpoint": "colrev.colrev_curation"
