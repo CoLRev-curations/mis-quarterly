@@ -15,3 +15,4 @@ data/dedupe/
 data/data/sample_references.bib
 data/dedupe
 data/prep
+.DS_Store
