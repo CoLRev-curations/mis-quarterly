@@ -19,7 +19,7 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": false,
-        "colrev_version": "0.12.0",
+        "colrev_version": "0.12.3",
         "auto_upgrade": true
     },
     "sources": [
@@ -117,8 +117,7 @@
             }
         ],
         "defects_to_ignore": [
-            "record-not-in-toc",
-            "inconsistent-with-url-metadata"
+            "record-not-in-toc"
         ]
     },
     "dedupe": {
@@ -218,6 +217,9 @@
                     "url",
                     "dblp_key"
                 ]
+            },
+            {
+                "endpoint": "colrev.ref_check"
             }
         ]
     }
