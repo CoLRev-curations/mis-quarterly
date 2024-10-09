@@ -54,11 +54,8 @@
             "filename": "data/search/CROSSREF.bib",
             "search_type": "TOC",
             "search_parameters": {
-                "scope": {
-                    "issn": [
-                        "0276-7783"
-                    ]
-                }
+                "url": "https://api.crossref.org/journals/0276-7783/works",
+                "version": "1.0.0"
             },
             "comment": ""
         }
