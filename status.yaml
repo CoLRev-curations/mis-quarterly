@@ -1,12 +1,12 @@
 atomic_steps: 31292
-completed_atomic_steps: 30447
+completed_atomic_steps: 30459
 completeness_condition: false
 currently:
   exclusion: {}
   md_imported: 0
   md_needs_manual_preparation: 28
-  md_prepared: 42
-  md_processed: 81
+  md_prepared: 30
+  md_processed: 93
   md_retrieved: -1
   non_completed: 151
   pdf_imported: 0
@@ -21,19 +21,19 @@ currently:
   rev_prescreen_included: 0
   rev_synthesized: 1782
 md_duplicates_removed: 3331
-nr_curated_records: 1979
+nr_curated_records: 1991
 nr_incomplete: 293
 overall:
   md_imported: 2049
   md_prepared: 2021
-  md_processed: 1979
+  md_processed: 1991
   md_retrieved: 5379
   pdf_imported: 1782
   pdf_not_available: 0
   pdf_prepared: 1782
   rev_excluded: 0
   rev_included: 1782
-  rev_prescreen: 1979
+  rev_prescreen: 1991
   rev_prescreen_excluded: 116
   rev_prescreen_included: 1898
   rev_screen: 1782
