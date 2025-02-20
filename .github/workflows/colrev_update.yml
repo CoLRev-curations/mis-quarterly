@@ -21,6 +21,18 @@ jobs:
           cd colrev
           pip install uv
           uv venv && uv pip install -e .[docs]
+          which colrev
+          colrev --version
+
+      - name: Activate virtual environment and verify colrev
+        run: |
+          source .venv/bin/activate
+          which colrev
+          colrev --version
+
+      - name: Add colrev to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
       - name: Setup git
         run: |
           git config --global user.name "CoLRev update"
