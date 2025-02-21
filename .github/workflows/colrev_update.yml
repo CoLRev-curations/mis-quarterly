@@ -21,7 +21,8 @@ jobs:
           cd colrev
           git checkout uv
           pip install uv
-          uv venv && uv pip install -e .[docs]
+          uv venv && uv pip install .
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
           which colrev
           colrev --version
 
