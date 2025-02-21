@@ -23,9 +23,12 @@ jobs:
           pip install uv
           uv venv && uv pip install .
 
-      - name: Ensure colrev is available
+      - name: Activate virtual environment and verify colrev
+        working-directory: ${{ runner.temp }}/colrev
         run: |
-          export PATH="$HOME/.local/bin:$PATH"
+          source .venv/bin/activate
+          export PATH="$PWD/.venv/bin:$PATH"
+          echo "Checking colrev installation..."
           which colrev || echo "colrev not found"
           colrev --version || echo "colrev failed to run"
 
