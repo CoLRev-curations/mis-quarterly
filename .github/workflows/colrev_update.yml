@@ -22,15 +22,6 @@ jobs:
           git checkout uv
           pip install uv
           uv venv && uv pip install .
-
-      - name: Activate virtual environment and verify colrev
-        run: |
-          source ${{ runner.temp }}/colrev/.venv/bin/activate
-          export PATH="$PWD/.venv/bin:$PATH"
-          echo "Checking colrev installation..."
-          which colrev || echo "colrev not found"
-          colrev version || echo "colrev failed to run"
-
       - name: Setup git
         run: |
           git config --global user.name "CoLRev update"
