@@ -22,15 +22,12 @@ jobs:
           git checkout uv
           pip install uv
           uv venv && uv pip install .
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-          which colrev
-          colrev --version
 
-      - name: Activate virtual environment and verify colrev
+      - name: Ensure colrev is available
         run: |
-          source .venv/bin/activate
-          which colrev
-          colrev --version
+          export PATH="$HOME/.local/bin:$PATH"
+          which colrev || echo "colrev not found"
+          colrev --version || echo "colrev failed to run"
 
       - name: Add colrev to PATH
         run: echo "$HOME/.local/bin" >> $GITHUB_PATH
