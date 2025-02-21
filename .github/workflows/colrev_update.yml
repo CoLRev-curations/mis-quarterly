@@ -19,7 +19,6 @@ jobs:
         run: |
           git clone https://github.com/CoLRev-Environment/colrev
           cd colrev
-          git checkout uv
           pip install uv
           uv venv && uv pip install .
       - name: Setup git
