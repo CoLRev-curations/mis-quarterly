@@ -30,10 +30,7 @@ jobs:
           export PATH="$PWD/.venv/bin:$PATH"
           echo "Checking colrev installation..."
           which colrev || echo "colrev not found"
-          colrev --version || echo "colrev failed to run"
-
-      - name: Add colrev to PATH
-        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+          colrev version || echo "colrev failed to run"
 
       - name: Setup git
         run: |
@@ -50,6 +47,7 @@ jobs:
       - name: Run CoLRev update
         working-directory: ${{ runner.temp }}/colrev
         run: |
+          source .venv/bin/activate
           colrev install .
           colrev search -f
           colrev load
