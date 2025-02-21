@@ -46,8 +46,6 @@ jobs:
       - name: Run CoLRev update
         run: |
           source ${{ runner.temp }}/colrev/.venv/bin/activate
-          echo "Installed packages:"
-          pip list
           colrev install .
           colrev search -f
           colrev load
