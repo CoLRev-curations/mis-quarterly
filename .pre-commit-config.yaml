@@ -10,13 +10,13 @@ repos:
         name: "CoLRev ReviewManager: format"
         entry: colrev-hooks-format
         language: python
-        stages: [commit]
+        stages: [pre-commit]
         pass_filenames: false
     -   id: colrev-hooks-check
         name: "CoLRev ReviewManager: check"
         entry: colrev-hooks-check
         language: python
-        stages: [commit]
+        stages: [pre-commit]
         pass_filenames: false
     -   id: colrev-hooks-report
         name: "CoLRev ReviewManager: report"
@@ -27,10 +27,10 @@ repos:
         name: "CoLRev ReviewManager: share"
         entry: colrev-hooks-share
         language: python
-        stages: [push]
+        stages: [pre-push]
         pass_filenames: false
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
     -   id: check-yaml
-        stages: [commit]
+        stages: [pre-commit]
