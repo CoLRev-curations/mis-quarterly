@@ -1,0 +1,16 @@
+{
+    "platform": "colrev.files_dir",
+    "search_results_path": "data/search/pdfs.bib",
+    "search_type": "FILES",
+    "search_string": "",
+    "version": "0.1.0",
+    "search_parameters": {
+        "scope": {
+            "subdir_pattern": "volume_number",
+            "type": "journal",
+            "journal": "MIS Quarterly",
+            "path": "data/pdfs"
+        }
+    },
+    "comment": ""
+}

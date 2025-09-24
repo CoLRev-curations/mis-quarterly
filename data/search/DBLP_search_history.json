@@ -1,0 +1,14 @@
+{
+    "platform": "colrev.dblp",
+    "search_results_path": "data/search/DBLP.bib",
+    "search_type": "TOC",
+    "search_string": "",
+    "version": "0.1.0",
+    "search_parameters": {
+        "scope": {
+            "venue_key": "journals/misq",
+            "journal_abbreviated": "MIS Q."
+        }
+    },
+    "comment": ""
+}

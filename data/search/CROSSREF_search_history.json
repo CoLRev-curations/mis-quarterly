@@ -1,0 +1,11 @@
+{
+    "platform": "colrev.crossref",
+    "search_results_path": "data/search/CROSSREF.bib",
+    "search_type": "TOC",
+    "search_string": "",
+    "version": "0.1.0",
+    "search_parameters": {
+        "url": "https://api.crossref.org/journals/0276-7783/works"
+    },
+    "comment": ""
+}

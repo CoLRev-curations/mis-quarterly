@@ -22,44 +22,7 @@
         "colrev_version": "0.14.0",
         "auto_upgrade": true
     },
-    "sources": [
-        {
-            "endpoint": "colrev.dblp",
-            "filename": "data/search/DBLP.bib",
-            "search_type": "TOC",
-            "search_parameters": {
-                "scope": {
-                    "venue_key": "journals/misq",
-                    "journal_abbreviated": "MIS Q."
-                }
-            },
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.files_dir",
-            "filename": "data/search/pdfs.bib",
-            "search_type": "FILES",
-            "search_parameters": {
-                "scope": {
-                    "subdir_pattern": "volume_number",
-                    "type": "journal",
-                    "journal": "MIS Quarterly",
-                    "path": "data/pdfs"
-                }
-            },
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.crossref",
-            "filename": "data/search/CROSSREF.bib",
-            "search_type": "TOC",
-            "search_parameters": {
-                "url": "https://api.crossref.org/journals/0276-7783/works",
-                "version": "1.0.0"
-            },
-            "comment": ""
-        }
-    ],
+    "sources": [],
     "search": {
         "retrieve_forthcoming": false
     },
